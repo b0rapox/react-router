@@ -1,0 +1,164 @@
+/* -------------------------------------- */
+        /* 1. Estilo Global do Contêiner */
+        /* -------------------------------------- */
+
+        .contact-container {
+            /* Fundo azul claro para toda a tela */
+            min-height: 100vh;
+            background-color: #e0f2f7; /* Cor similar ao sky-200 */
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            padding: 20px;
+            flex-direction: column;
+            font-family: 'Inter', sans-serif; /* Fonte padrão para consistência */
+        }
+
+        /* -------------------------------------- */
+        /* 2. Estilo do Card Principal */
+        /* -------------------------------------- */
+
+        .contact-card {
+            width: 100%;
+            max-width: 500px; /* Limita a largura em desktop */
+            background-color: #ffffff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+            border-radius: 12px; /* Cantos mais arredondados */
+            padding: 40px; 
+            box-sizing: border-box; 
+            transition: transform 0.3s ease; /* Efeito hover no card */
+        }
+
+        .contact-card:hover {
+            transform: translateY(-2px);
+        }
+
+        /* -------------------------------------- */
+        /* 3. Cabeçalho */
+        /* -------------------------------------- */
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #e5e7eb; /* Linha divisória sutil */
+            padding-bottom: 20px;
+        }
+
+        .contact-header h1 {
+            font-size: 2.25rem;
+            font-weight: 800; /* Extrabold */
+            color: #1f2937; 
+            margin: 0 0 5px 0;
+        }
+
+        .contact-header p {
+            font-size: 1rem;
+            color: #6b7280;
+            margin: 0;
+        }
+
+        /* -------------------------------------- */
+        /* 4. Formulário e Campos de Input */
+        /* -------------------------------------- */
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 25px; 
+        }
+
+        .form-group label {
+            font-size: 0.9rem; 
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            transition: color 0.15s;
+        }
+
+        /* Cor do ícone */
+        .icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 10px;
+            color: #0ea5e9; /* Cor azul forte */
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px; 
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 1rem;
+            color: #1f2937;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            box-sizing: border-box;
+            outline: none;
+            resize: none; 
+        }
+
+        /* Estilo de Foco Aprimorado */
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #0ea5e9; 
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2); /* Anel de foco azul */
+        }
+
+        /* -------------------------------------- */
+        /* 5. Botão de Envio */
+        /* -------------------------------------- */
+
+        .submit-button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px; 
+            border: none;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #0284c7; /* Azul primário */
+            cursor: pointer;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-size: 1.1rem;
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        .submit-button:hover {
+            background-color: #0369a1; 
+            transform: translateY(-1px);
+        }
+
+        .submit-button:active {
+            transform: translateY(0);
+        }
+
+        .icon-btn {
+            width: 22px;
+            height: 22px;
+            margin-right: 10px;
+        }
+
+        /* -------------------------------------- */
+        /* 6. Responsividade */
+        /* -------------------------------------- */
+
+        @media (max-width: 600px) {
+            .contact-card {
+                padding: 30px 20px;
+                border-radius: 8px;
+            }
+            
+            .contact-header h1 {
+                font-size: 1.75rem;
+            }
+            
+            .submit-button {
+                font-size: 1rem;
+                padding: 14px;
+            }
+        }
