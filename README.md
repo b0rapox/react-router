@@ -74,24 +74,17 @@ Componente presente no layout (e.g., App.jsx)
 
 Layout Padrão (Wrapper): Renderiza o componente da rota ativa dentro do template principal (abaixo do NavBar).
 
-## 🛠️ Instalação e Execução
-
-Este projeto utiliza uma toolchain moderna (Vite, HMR, etc.). O setup é mínimo, seguindo a tradição de manter a complexidade na infraestrutura e a simplicidade no código de aplicação.
-
-Clone o repositório:
-
-git clone [SEU_REPO_AQUI]
-
 
 Instale as dependências:
 
 npm install
-# Dependências essenciais: react, react-dom, react-router-dom
+# Dependências essenciais: react, react-dom, react-router-dom, react-icons, json-server
 
 
 Execute em modo de desenvolvimento:
 
 npm run dev
+npm run server
 
 
 ⚠️ Nota: A ausência de arquivos CSS externos (como ../styles/Contact.css) é uma decisão de design forçada pelo ambiente de Single-File Mandate. Todo o estilo é CSS-in-JS (via <style> tag ou styled-components/equivalente) para garantir a portabilidade e a execução imediata.
