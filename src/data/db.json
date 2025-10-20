@@ -1,0 +1,75 @@
+{
+  "rules": [
+    {
+      "id": "1",
+      "metric": "Latência P99 (ms)",
+      "threshold": 500,
+      "status": "Ativo",
+      "priority": "Crítica",
+      "channel": "Slack"
+    },
+    {
+      "id": "2",
+      "metric": "Taxa de Erro 5xx (%)",
+      "threshold": 1,
+      "status": "Ativo",
+      "priority": "Alta",
+      "channel": "PagerDuty"
+    },
+    {
+      "id": "3",
+      "metric": "Uso de CPU do Serviço X",
+      "threshold": 85,
+      "status": "Pausado",
+      "priority": "Média",
+      "channel": "Email"
+    },
+    {
+      "id": "4",
+      "metric": "QPS (Queries per Second) do Banco de Dados",
+      "threshold": 1200,
+      "status": "Ativo",
+      "priority": "Alta",
+      "channel": "PagerDuty"
+    },
+    {
+      "id": "5",
+      "metric": "Fila de Mensagens no Broker (Consumer Lag)",
+      "threshold": 50000,
+      "status": "Pausado",
+      "priority": "Crítica",
+      "channel": "Slack"
+    },
+    {
+      "id": "6",
+      "metric": "Taxa de Conversão da Feature A (%)",
+      "threshold": 5.5,
+      "status": "Ativo",
+      "priority": "Média",
+      "channel": "Email"
+    },
+    {
+      "id": "7",
+      "metric": "Tempo de Resposta da API de Login (ms)",
+      "threshold": 300,
+      "status": "Ativo",
+      "priority": "Crítica",
+      "channel": "PagerDuty"
+    },
+    {
+      "id": "8",
+      "metric": "Número de Sessões Ativas",
+      "threshold": 5000,
+      "status": "Ativo",
+      "priority": "Média",
+      "channel": "Slack"
+    },
+    {
+      "id": "fda5",
+      "metric": "TESTE",
+      "threshold": 5,
+      "priority": "critical",
+      "active": true
+    }
+  ]
+}

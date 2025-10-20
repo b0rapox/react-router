@@ -223,7 +223,7 @@ const NavBar = () => { // Componente principal de navegação
 
       <nav className="navbar-container">
         
-        {/* Marca/Título */}
+        {/* Marca/Título */}    
         <a href="/" className="navbar-brand">
           SENIOR DEV
         </a>

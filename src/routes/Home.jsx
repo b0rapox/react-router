@@ -1,6 +1,4 @@
-import React from 'react';
-// A importação de arquivos CSS externos (ex: import '../styles/Home.css';) foi removida.
-// O CSS deve ser embutido (inline) no arquivo único para funcionar corretamente nesta plataforma.
+import { useFetcher } from "react-router-dom";
 
 // --- DADOS DA DASHBOARD (Mock Data) ---
 const performanceData = [
@@ -54,7 +52,6 @@ const SettingsIcon = (props) => (
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
     </svg>
 );
-
 
 
 // --- ESTILOS CSS PURO (INCLUÍDO INLINE PARA CUMPRIR RESTRIÇÃO DE ARQUIVO ÚNICO) ---
@@ -361,12 +358,14 @@ const pureCSS = `
 `;
 
 
+
 // --- COMPONENTE HOME/DASHBOARD (Contém a lógica principal do painel) ---
 const HomeDashboard = () => {
     // Itens de menu da sidebar
     const menuItems = [
-        { title: 'Relatórios Detalhados', url: '#reports' },
-        { title: 'Configurações de Alerta', url: '#alerts' },
+        { title: 'Relatórios Detalhados', url: '/reports' },
+        { title: 'Configurações de Alerta', url: '/alert' },
+        { title: 'Dados', url: '/loadrules' },
     ];
 
     // Função para obter a classe de status de tendência
